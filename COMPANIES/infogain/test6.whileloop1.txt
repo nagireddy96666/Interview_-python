@@ -1,0 +1,158 @@
+Python Questions and Answers – While and For Loops – 1
+
+This set of Python Multiple Choice Questions & Answers (MCQs) focuses on “While and For Loops”.
+
+1. What is the output of the following?
+
+x = ['ab', 'cd']
+for i in x:
+    i.upper()
+print(x)
+a) [‘ab’, ‘cd’].
+b) [‘AB’, ‘CD’].
+c) [None, None].
+d) none of the mentioned
+View Answer
+
+Answer: a
+Explanation: The function upper() does not modify a string in place, it returns a new string which isn’t being stored anywhere.
+2. What is the output of the following?
+
+x = ['ab', 'cd']
+for i in x:
+    x.append(i.upper())
+print(x)
+a) [‘AB’, ‘CD’].
+b) [‘ab’, ‘cd’, ‘AB’, ‘CD’].
+c) [‘ab’, ‘cd’].
+d) none of the mentioned
+View Answer
+
+Answer: d
+Explanation: The loop does not terminate as new elements are being added to the list in each iteration.
+3. What is the output of the following?
+
+i = 1
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+    i + = 1
+a) 1 2
+b) 1 2 3
+c) error
+d) none of the mentioned
+View Answer
+
+Answer: c
+Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
+4. What is the output of the following?
+
+i = 1
+while True:
+    if i%0O7 == 0:
+        break
+    print(i)
+    i += 1
+a) 1 2 3 4 5 6
+b) 1 2 3 4 5 6 7
+c) error
+d) none of the mentioned
+View Answer
+
+Answer: a
+Explanation: Control exits the loop when i becomes 7.
+5. What is the output of the following?
+
+i = 5
+while True:
+    if i%0O11 == 0:
+        break
+    print(i)
+    i += 1
+a) 5 6 7 8 9 10
+b) 5 6 7 8
+c) 5 6
+d) error
+View Answer
+
+Answer: b
+Explanation: 0O11 is an octal number.
+6. What is the output of the following?
+
+i = 5
+while True:
+    if i%0O9 == 0:
+        break
+    print(i)
+    i += 1
+a) 5 6 7 8
+b) 5 6 7 8 9
+c) 5 6 7 8 9 10 11 12 13 14 15 ….
+d) error
+View Answer
+
+Answer: d
+Explanation: 9 isn’t allowed in an octal number.
+7. What is the output of the following?
+
+i = 1
+while True:
+    if i%2 == 0:
+        break
+    print(i)
+    i += 2
+a) 1
+b) 1 2
+c) 1 2 3 4 5 6 …
+d) 1 3 5 7 9 11 …
+View Answer
+
+Answer: d
+Explanation: The loop does not terminate since i is never an even number.
+8. What is the output of the following?
+
+i = 2
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+    i += 2
+a) 2 4 6 8 10 …
+b) 2 4
+c) 2 3
+d) error
+View Answer
+
+Answer: b
+Explanation: The numbers 2 and 4 are printed. The next value of i is 6 which is divisible by 3 and hence control exits the loop.
+9. What is the output of the following?
+
+i = 1
+while False:
+    if i%2 == 0:
+        break
+    print(i)
+    i += 2
+a) 1
+b) 1 3 5 7 …
+c) 1 2 3 4 …
+d) none of the mentioned
+View Answer
+
+Answer: d
+Explanation: Control does not enter the loop because of False.
+10. What is the output of the following?
+
+True = False
+while True:
+    print(True)
+    break
+a) True
+b) False
+c) None
+d) none of the mentioned
+View Answer
+
+Answer: d
+Explanation: SyntaxError, True is a keyword and it’s value cannot be changed.

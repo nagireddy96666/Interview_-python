@@ -1,0 +1,12 @@
+#import pdb;pdb.set_trace()
+def rev(text):
+    if len(text)<=1:
+        return text
+    return rev(text[1:])+text[0]
+print rev('hello')
+print "#"*40
+def rev(text):
+    if len(text)<=1:
+        return text
+    return text[-1::-1]
+print rev('hello')

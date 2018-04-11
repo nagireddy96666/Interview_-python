@@ -1,0 +1,137 @@
+Python Questions and Answers – Core Datatypes
+
+This set of Python Questions & Answers focuses on “Core Data Types”.
+1. Which of these in not a core datatype?
+a) Lists
+b) Dictionary
+c) Tuples
+d) Class
+View Answer
+d)
+2. Given a function that does not return any value, What value is thrown by itby default when executed in shell.
+a) int
+b) bool
+c) void
+d) None
+View Answer
+d)
+3. Following set of commands are executed in shell, what will be the output?
+
+>>>str="hello"
+>>>str[:2]
+>>>
+a) he
+b) lo
+c) olleh
+d) hello
+View Answer
+a)
+4. Which of the following will run without errors(multiple answers possible) ?
+a) round(45.8)
+b) round(6352.898,2)
+c) round()
+d) round(7463.123,2,1)
+View Answer
+a),b)
+5. What is the return type of function id ?
+a) int
+b) float
+c) bool
+d) dict
+View Answer
+a)
+6. In python we do not specify types,it is directly interpreted by the compiler, so consider the following operation to be performed.
+
+>>>x = 13 ? 2
+objective is to make sure x has a integer value, select all that apply (python 3.xx)
+a) x = 13 // 2
+b) x = int(13 / 2)
+c) x = 13 / 2
+d) x = 13 % 2
+View Answer
+a),b)
+7. What error occurs when you execute?
+apple = mango
+a) SyntaxError
+b) NameError
+c) ValueError
+d) TypeError
+View Answer
+b)
+8. Carefully observe the code and give the answer.
+
+def example(a):
+    a = a + '2'
+     a = a*2
+    return a
+>>>example("hello")
+a) indentation Error
+b) cannot perform mathematical operation on strings
+c) hello2
+d) hello2hello2
+View Answer
+a)
+9. What dataype is the object below ?
+L = [1, 23, ‘hello’, 1] a) List
+b) dictionary
+c) array
+d) tuple
+View Answer
+a)
+10. In order to store values in terms of key and value we use what core datatype.
+a) List
+b) tuple
+c) class
+d) dictionary
+View Answer
+d)
+11. Which of the following results in a SyntaxError(Multiple answers possible) ?
+a) ‘”Once upon a time…”, she said.’
+b) “He said, “Yes!””
+c) ‘3\’
+d) ”’That’s okay”’
+View Answer
+b,c,d
+12. The following is displayed by a print function call:
+
+tom
+dick
+harry
+Select all of the function calls that result in this output
+a) print(”’tom
+\ndick
+\nharry”’)
+b) print(”’tom
+dick
+harry”’)
+c) print(‘tom\ndick\nharry’)
+d) print(‘tom
+dick
+harry’)
+View Answer
+b,c
+13. What is the average value of the code that is executed below ?
+
+>>>grade1 = 80
+>>>grade2 = 90
+>>>average = (grade1 + grade2) / 2
+a) 85
+b) 85.0
+c) 95
+d) 95.0
+View Answer
+a in 2.7//b in 3.5
+14. Select all options that print
+hello-how-are-you
+a) print(‘hello’, ‘how’, ‘are’, ‘you’)
+b) print(‘hello’, ‘how’, ‘are’, ‘you’ + ‘-‘ * 4)
+c) print(‘hello-‘ + ‘how-are-you’)
+d) print(‘hello’ + ‘-‘ + ‘how’ + ‘-‘ + ‘are’ + ‘-‘ + ‘you’)
+View Answer
+c,d
+15. What is the return value of trunc() ?
+a) int
+b) bool
+c) float
+d) None
+View Answer

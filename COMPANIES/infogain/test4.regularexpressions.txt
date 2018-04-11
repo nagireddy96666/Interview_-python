@@ -1,0 +1,121 @@
+Python Questions and Answers – Regular Expressions
+
+This set of Python Multiple Choice Questions & Answers (MCQs) focuses on “Regular Expressions”.
+
+1. Which module in Python supports regular expressions?
+a) re
+b) regex
+c) pyregex
+d) none of the mentioned
+View Answer
+
+Answer: a
+Explanation: re is a part of the standard library and can be imported using: import re.
+2. Which of the following creates a pattern object?
+a) re.create(str)
+b) re.regex(str)
+c) re.compile(str)
+d) re.assemble(str)
+View Answer
+
+Answer: c
+Explanation: It converts a given string into a pattern object.
+3. What does the function re.match do?
+a) matches a pattern at the start of the string
+b) matches a pattern at any position in the string
+c) such a function does not exist
+d) none of the mentioned
+View Answer
+
+Answer: a
+Explanation: It will look for the pattern at the beginning and return None if it isn’t found.
+4. What does the function re.search do?
+a) matches a pattern at the start of the string
+b) matches a pattern at any position in the string
+c) such a function does not exist
+d) none of the mentioned
+View Answer
+
+Answer: b
+Explanation: It will look for the pattern at any position in the string.
+5. What is the output of the following?
+
+sentence = 'we are humans'
+matched = re.match(r'(.*) (.*?) (.*)', sentence)
+print(matched.groups())
+a) (‘we’, ‘are’, ‘humans’)
+b) (we, are, humans)
+c) (‘we’, ‘humans’)
+d) ‘we are humans’
+View Answer
+
+Answer: a
+Explanation: This function returns all the subgroups that have been matched.
+6. What is the output of the following?
+
+sentence = 'we are humans'
+matched = re.match(r'(.*) (.*?) (.*)', sentence)
+print(matched.group())
+a) (‘we’, ‘are’, ‘humans’)
+b) (we, are, humans)
+c) (‘we’, ‘humans’)
+d) ‘we are humans’
+View Answer
+
+Answer: d
+Explanation: This function returns the entire match.
+7. What is the output of the following?
+
+sentence = 'we are humans'
+matched = re.match(r'(.*) (.*?) (.*)', sentence)
+print(matched.group(2))
+a) ‘are’
+b) ‘we’
+c) ‘humans’
+d) ‘we are humans’
+View Answer
+
+Answer: c
+Explanation: This function returns the particular subgroup.
+8. What is the output of the following?
+
+sentence = 'horses are fast'
+regex = re.compile('(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)')
+matched = re.search(regex, sentence)
+print(matched.groupdict())
+a) {‘animal’: ‘horses’, ‘verb’: ‘are’, ‘adjective’: ‘fast’}
+b) (‘horses’, ‘are’, ‘fast’)
+c) ‘horses are fast’
+d) ‘are’
+View Answer
+
+Answer: a
+Explanation: This function returns a dictionary that contains all the mathches.
+9. What is the output of the following?
+
+sentence = 'horses are fast'
+regex = re.compile('(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)')
+matched = re.search(regex, sentence)
+print(matched.groups())
+a) {‘animal’: ‘horses’, ‘verb’: ‘are’, ‘adjective’: ‘fast’}
+b) (‘horses’, ‘are’, ‘fast’)
+c) ‘horses are fast’
+d) ‘are’
+View Answer
+
+Answer: b
+Explanation: This function returns all the subgroups that have been matched.
+10. What is the output of the following?
+
+sentence = 'horses are fast'
+regex = re.compile('(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)')
+matched = re.search(regex, sentence)
+print(matched.group(2))
+a) {‘animal’: ‘horses’, ‘verb’: ‘are’, ‘adjective’: ‘fast’}
+b) (‘horses’, ‘are’, ‘fast’)
+c) ‘horses are fast’
+d) ‘are’
+View Answer
+
+Answer: d
+Explanation: This function returns the particular subgroup.
